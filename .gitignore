@@ -1,0 +1,3 @@
+migrations/
+__pycache__/
+training_settings.py

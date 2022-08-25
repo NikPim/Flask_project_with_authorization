@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container-fluid text-sm-center p-5 bg-light"> <!-- bg-light is background color & p-5 is padding -->
+    {% if current_user.is_authenticated %}
+    <h1>Hi {{ current_user.username }}!</h1>
+  {% else %}
+    <h1>Please login or register!</h1>
+  {% endif %}
+</div>
+
+
+{% endblock %}
